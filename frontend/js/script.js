@@ -147,9 +147,14 @@ function initializeTabFunctionality() {
 
     if (tabButtons.length === 0) return;
 
+    console.log(`✅ Tab functionality initialized with ${tabButtons.length} buttons and ${tabPanes.length} panes`);
+
     tabButtons.forEach(button => {
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
             const targetTab = this.getAttribute('data-tab');
+            
+            console.log(`🔄 Switching to tab: ${targetTab}`);
             
             // Remove active state from all tabs
             tabButtons.forEach(btn => btn.classList.remove('active'));
@@ -160,6 +165,10 @@ function initializeTabFunctionality() {
             const targetPane = document.getElementById(targetTab);
             if (targetPane) {
                 targetPane.classList.add('active');
+                // Scroll to the tabs section smoothly
+                targetPane.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            } else {
+                console.error(`❌ Tab pane not found: ${targetTab}`);
             }
         });
     });
