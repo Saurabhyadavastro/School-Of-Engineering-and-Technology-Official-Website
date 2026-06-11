@@ -265,12 +265,12 @@ Automatic deployment is configured via GitHub Actions. Every push to the main br
 
 **School of Engineering and Technology**
 
-Samrat Vikramaditya Vishwavidyalaya, Ujjain (M.P.)
+School of Engineering & Technology (SoET), Samrat Vikramaditya Vishwavidyalaya, Vikram University Campus, Ujjain (M.P.) – 456010
 
-Email: soet@vikramuniv.ac.in
-Phone: +91 734-2514271
+Email: soetvikramujn@gmail.com
+Phone: +91 9893295134, 8770122362
 Website: vikramuniv.ac.in
-Address: Samrat Vikramaditya Vishwavidyalaya, Dewas Road, Ujjain - 456010
+Address: School of Engineering & Technology (SoET), Samrat Vikramaditya Vishwavidyalaya, Vikram University Campus, Ujjain (M.P.) – 456010
 
 **Project Maintainer**
 

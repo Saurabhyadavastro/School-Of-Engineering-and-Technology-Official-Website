@@ -183,9 +183,10 @@ body {
 }
 
 .announcements-btn,
-.syllabus-btn {
+.syllabus-btn,
+.admin-login-btn {
     background: rgba(255, 255, 255, 0.15);
-    color: white;
+    color: white !important;
     text-decoration: none;
     padding: 6px 15px;
     border-radius: 20px;
@@ -210,10 +211,12 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    box-shadow: none; /* Reset shadow from admin-login.css if loaded */
 }
 
 .announcements-btn:hover,
-.syllabus-btn:hover {
+.syllabus-btn:hover,
+.admin-login-btn:hover {
     background: rgba(255, 255, 255, 0.25);
     -webkit-transform: translateY(-1px);
     -moz-transform: translateY(-1px);
@@ -223,16 +226,19 @@ body {
     -webkit-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    color: white !important;
 }
 
 .announcements-btn:focus,
-.syllabus-btn:focus {
+.syllabus-btn:focus,
+.admin-login-btn:focus {
     outline: 2px solid var(--background-cream);
     outline-offset: 2px;
 }
 
 .announcements-btn i,
-.syllabus-btn i {
+.syllabus-btn i,
+.admin-login-btn i {
     font-size: 0.9rem;
 }
 
@@ -5408,6 +5414,59 @@ section {
 
 .programs-btn:hover i {
     transform: translateX(5px);
+}
+
+/* Why Choose SoET Section (Brochure) */
+.why-choose-soet {
+    padding: 100px 0;
+    background-color: var(--white);
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.feature-card {
+    background: linear-gradient(135deg, var(--background-cream) 0%, #fff 100%);
+    padding: 35px 25px;
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(132, 28, 44, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-red);
+    box-shadow: 0 20px 40px rgba(132, 28, 44, 0.1);
+    background: white;
+}
+
+.feature-card i {
+    font-size: 2.8rem;
+    color: var(--primary-red);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover i {
+    transform: scale(1.1);
+}
+
+.feature-card h3 {
+    color: var(--primary-blue);
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 0;
+    line-height: 1.4;
 }
 
 /* Campus Life Section */
